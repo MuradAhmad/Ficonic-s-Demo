@@ -312,11 +312,9 @@ public class MainActivity extends AppCompatActivity implements LocationListener,
             if (!exportDir.mkdirs()) {
 
                 Log.d("App", "failed to create directory");
-
             }
-
             }else {
-            Log.d("App", "Directory created");
+                Log.d("App", "Directory created");
             }
 
         try {
@@ -337,8 +335,6 @@ public class MainActivity extends AppCompatActivity implements LocationListener,
                 String zValue = locationJsonObject.getString("zValue");
                 String timestamp =locationJsonObject.getString("timestamp");
 
-
-
                 String[] values = {
                         timestamp,
                         latitude,
@@ -358,9 +354,6 @@ public class MainActivity extends AppCompatActivity implements LocationListener,
                 fileWriter.close();
             Toast.makeText(this, "Data saved to CSV",
                     Toast.LENGTH_LONG).show();
-            Log.d("App", "Data saved to CSV");
-
-
         } catch (JSONException e) {
             e.printStackTrace();
         } catch (IOException e) {
