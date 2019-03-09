@@ -1,4 +1,4 @@
-# Ficonic-s-recruitment
+# Ficonic-s-Demo
 The purpose of this simple application is to collect accelerometer and GPS data and store it to a csv-file. 
 The application is developed as a native Android(Java) app.
 Functionality of the application is :
